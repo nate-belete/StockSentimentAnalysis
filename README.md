@@ -10,10 +10,15 @@ Example:
 ssa = StockSentimentAnalysis()
 
 ssa.apiKey = 'YOUR_API_KEY'
+
 ssa.openai_apiKey = 'YOUR_OPENAI_API_KEY'
+
 ssa.stocks = ['AAPL', 'MSFT']
+
 ssa.start_date = '2020-01-01'
+
 ssa.end_date = '2020-05-01'
+
 ssa.N = 10
 
 This will create an instance of the StockSentimentAnalysis class with the given parameters. 
