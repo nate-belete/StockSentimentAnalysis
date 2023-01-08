@@ -8,6 +8,7 @@ To use the class, you must create an instance with your API keys for newsapi.org
 Example:
 
 ssa = StockSentimentAnalysis()
+
 ssa.apiKey = 'YOUR_API_KEY'
 ssa.openai_apiKey = 'YOUR_OPENAI_API_KEY'
 ssa.stocks = ['AAPL', 'MSFT']
