@@ -7,9 +7,24 @@ import requests
 import pandas as pd
 import yfinance as yf
 
-
 class StockSentimentAnalysis():
+    """
+    This class StockSentimentAnalysis() is used to perform sentiment analysis on different stocks by using API keys from openai. 
+    The user has to provide stock tickers, start date and end date to get sentiment related data.
+    """
     def __init__(self):
+        """
+        The __init__ constructor of StockSentimentAnalysis class initializes the following class attributes:
+            apiKey: API key to access stock data.
+            openai_apiKey: API key to access sentiment analysis data.
+            stocks: List of stock tickers.
+            start_date: Start date of the sentiment analysis.
+            end_date: End date of the sentiment analysis.
+            N: Number of stocks for sentiment analysis.
+            sentiment_df: Dataframe with sentiment analysis data.
+            sentiment_summary_df: Summary dataframe with sentiment analysis data.
+            stock_roi_df: Dataframe with stock return on investment data.
+    """
         self.apiKey = None
         self.openai_apiKey = None
         self.stocks = None
