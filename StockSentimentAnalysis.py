@@ -24,7 +24,7 @@ class StockSentimentAnalysis():
             sentiment_df: Dataframe with sentiment analysis data.
             sentiment_summary_df: Summary dataframe with sentiment analysis data.
             stock_roi_df: Dataframe with stock return on investment data.
-    """
+        """
         self.apiKey = None
         self.openai_apiKey = None
         self.stocks = None
