@@ -1,3 +1,13 @@
+import os
+import json
+import time 
+import random
+import openai
+import requests
+import pandas as pd
+import yfinance as yf
+
+
 class StockSentimentAnalysis():
     def __init__(self):
         self.apiKey = None
